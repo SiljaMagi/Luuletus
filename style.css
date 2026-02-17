@@ -1,0 +1,122 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        html {
+            height: 100%;
+            width: 100%;
+            background: #00213B;
+        }
+
+        body {
+            
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('pildid/pilvedesse.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .menu {
+            
+        }
+        * {
+            box-sizing: border-box;
+        } /* peab lihtsalt teadma, siis kui on border div-il, arvestab sinna sisse*/
+        .pealkiri {    
+            color: white;
+            font-size: 32px;
+            font-family: 'Bellota Text', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            word-wrap: break-word;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+        .menuu {
+            color: white;
+            font-size: 32px;
+            font-family: 'Bellota Text', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            word-wrap: break-word;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+        .sisu {
+            color: white;
+            font-size: 24px;
+            font-family: 'Bellota Text', sans-serif;
+            font-weight: 300;
+            word-wrap: break-word;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Uus pildikonteiner */
+        .pilt {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 3rem auto;     /* vahe allapoole luuletuse suunas */
+            display: block;
+        }
+
+        .pilt img {
+            width: 100%;
+            max-width: 420px;             /* saad ise reguleerida kui suureks tahad */
+            height: auto;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;          /* kõik lapsed (pealkiri, pilt, tekst) keskele */
+            justify-content: center;
+            gap: 0;                       /* gap ei ole enam vaja, sest pildil on oma margin */
+            border: 1px solid white;
+            background-color: rgba(0, 33, 59, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 4rem 5rem;
+            margin: 2rem;
+            max-width: 800px;
+            border-radius: 2rem;
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline dotted;
+            text-decoration-color: rgba(128,128,128,0.8);
+            text-decoration-thickness: 0.1rem;
+            text-underline-offset: 0.5rem;
+        }
+
+        .eri {
+            font-style: italic;
+        }
+
+        .koos {
+            display: flex;
+            flex-direction: row;
+            align-items: center;   
+        }
+
+        @media (max-width: 768px) {
+            .wrapper {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .pealkiri {
+                font-size: 24px;
+            }
+            
+            .sisu {
+                font-size: 20px;
+            }
+
+            .pilt img {
+                max-width: 300px;
+            }
+        }
