@@ -51,12 +51,7 @@
         }
 
         /* Uus pildikonteiner */
-        .pilt {
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto 3rem auto;     /* vahe allapoole luuletuse suunas */
-            display: block;
-        }
+    
 
         .pilt img {
             width: 100%;
