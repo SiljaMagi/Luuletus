@@ -56,7 +56,7 @@
         .pilt {
             max-width: 100%;
             height: auto;
-            margin: 0 auto 3rem auto;     /* vahe allapoole luuletuse suunas */
+              /* vahe allapoole luuletuse suunas */
             display: block;
         }
 
@@ -82,6 +82,7 @@
             max-width: 800px;
             border-radius: 2rem;
             text-align: center;
+         
         }
 
         a {
@@ -99,7 +100,8 @@
         .koos {
             display: flex;
             flex-direction: row;
-            align-items: center;   
+            align-items: center;  
+         justify-content: space-evenly;
         }
 
         @media (max-width: 768px) {
